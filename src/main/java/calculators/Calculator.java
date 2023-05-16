@@ -10,13 +10,8 @@ public class Calculator {
         this.operations = new ArrayList<>();
     }
 
-    public void printOperations() {
-        if (operations.size()==0) {
-            System.out.println("Operation list is empty.");
-        }
-        for(String o : operations) {
-            System.out.println(o);
-        }
+    public List<String> printOperations() {
+       return operations;
     }
 
     public void addOperation(String operation) {
